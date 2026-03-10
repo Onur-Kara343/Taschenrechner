@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taschnenrechner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <br><br><br><br>
+ 
+  <div id="calculator" data-mode="basic">
+
+  <!-- DISPLAY -->
+  <div class="display">
+    <input type="text" id="input" placeholder="0" disabled>
+    <div id="history"></div>
+  </div>
+
+  <!-- KEYS -->
+  <div class="keys">
+
+    <!-- WISSENSCHAFTLICH -->
+    <button data-fn="sqrt">√</button>
+    <button data-fn="exp">ex</button>
+    <button data-fn="ln">ln</button>
+    <button data-fn="pow2">x²</button>
+    <button data-fn="cbrt">∛</button>
+    <button data-fn="sin">sin()</button>
+    <button data-fn="cos">cos()</button>
+    <button data-fn="tan">tan()</button>
+    <button data-value="3.14">π</button>
+    <button data-value="2.71">e</button>
+    <button data-value="(">(</button>
+    <button data-value=")">)</button>
+
+    <!-- BASIC -->
+    <button id="delete">⌫</button>
+    <button id="clear" class="clear">C</button>
+    <button id="clear" data-fn="percent">%</button>
+    <button data-value="/">÷</button>
+
+    <button data-value="7">7</button>
+    <button data-value="8">8</button>
+    <button data-value="9">9</button>
+    <button data-value="*">×</button>
+
+    <button data-value="4">4</button>
+    <button data-value="5">5</button>
+    <button data-value="6">6</button>
+    <button data-value="-">−</button>
+
+    <button data-value="1">1</button>
+    <button data-value="2">2</button>
+    <button data-value="3">3</button>
+    <button data-value="+">+</button>
+  
+    <button id="minus" data-value="-">±</button>
+    <button data-value="0">0</button>
+    <button data-value=".">,</button>
+    <button id="submit">=</button>
+
+  </div>
+</div>
+
+<canvas id="canvas"></canvas>
+<script src="script.js"></script>
+</body>
+</html>
